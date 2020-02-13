@@ -21,15 +21,26 @@
   --space-xxxxl: calc(13.75 * var(--space-unit));
   --component-padding: var(--space-md);
   --border-width: var(--xxxxs);
+
+  /* VARIABLES: FONT */
+  --text: 'Muli';
+  --heading: 'Titillium Web';
+  --code: 'Ubuntu Mono';
+  --special: 'Lacquer';
 }
 
 body {
   margin: 0;
-  font-family: 'Muli', sans-serif;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: flex-start;
+  justify-content: center;
+  background: var(--background);
+  font-family: var(--text), sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: 'Ubuntu Mono', 'Courier New', monospace;
+  font-family: var(--code), 'Courier New', monospace;
 }
