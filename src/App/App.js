@@ -1,18 +1,16 @@
 import React from 'react'
 import './App.css'
-import { H1 } from '../styled'
-import styled from 'styled-components'
+import { CssBaseline, Typography } from '@material-ui/core'
 
 const App = () => {
   return (
-    <div className='app'>
-      <H1>DAN GOSS</H1>
-    </div>
+    <>
+      <CssBaseline />
+      <div className='app'>
+        <Typography variant='h1'>DAN GOSS</Typography>
+      </div>
+    </>
   )
 }
-
-styled(App)`
-  padding: var(--component-padding);
-`
 
 export default App
