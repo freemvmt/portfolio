@@ -1,6 +1,6 @@
 :root {
   /* VARIABLES: COLOURS (cf. https://coolors.co/01161e-16bac5-ffffea-4a4e69-ffe347) */
-  --background: #ffffea;
+  --background: #fff;
   --primary: #01161e;
   --secondary: #16bac5;
   --detail: #4a4e69;
@@ -29,13 +29,17 @@
   --special: 'Lacquer';
 }
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   display: flex;
   flex-flow: column nowrap;
-  align-items: flex-start;
+  align-items: center;
   justify-content: center;
-  background: var(--background);
+  background-color: var(--background);
   font-family: var(--text), sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
